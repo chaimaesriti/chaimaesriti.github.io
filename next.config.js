@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  images: {
-    domains: ['via.placeholder.com'],
-  },
-}
+  output: 'export',
+  images: { unoptimized: true },
+  basePath: '/chaimaesriti.github.io',
+  assetPrefix: '/chaimaesriti.github.io'
+};
 
-module.exports = nextConfig 
+module.exports = nextConfig;
