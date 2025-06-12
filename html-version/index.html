@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaïmae Sriti</title>
+    <meta name="description" content="Chaïmae Sriti - Founder of Actuarially, an AI-native workspace for insurance teams">
+    <link rel="icon" href="images/3.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "IBM Plex Mono", monospace;
+            background-color: white;
+            color: black;
+            min-height: 100vh;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        body.dark {
+            background-color: black;
+            color: white;
+        }
+        
+        .container {
+            max-width: 768px;
+            margin: 0 auto;
+            padding: 96px 24px;
+            font-size: 14px;
+            position: relative;
+        }
+        
+        .nav {
+            position: absolute;
+            top: 16px;
+            right: 0;
+            z-index: 50;
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        
+        .nav-links a {
+            color: inherit;
+            text-decoration: none;
+            font-size: 14px;
+            opacity: 1;
+            transition: opacity 0.2s;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        .dark-mode-toggle {
+            padding: 8px;
+            border-radius: 50%;
+            background: transparent;
+            border: none;
+            color: inherit;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .dark-mode-toggle:hover {
+            background-color: rgba(128, 128, 128, 0.2);
+        }
+        
+        body.dark .dark-mode-toggle:hover {
+            background-color: rgba(128, 128, 128, 0.3);
+        }
+        
+        .header {
+            margin-bottom: 40px;
+            padding-top: 64px;
+        }
+        
+        .header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .header p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .header a {
+            color: inherit;
+            text-decoration: underline;
+            transition: opacity 0.2s;
+        }
+        
+        .header a:hover {
+            opacity: 1;
+        }
+        
+        .section {
+            margin-bottom: 32px;
+        }
+        
+        .section-toggle {
+            display: flex;
+            align-items: center;
+            background: none;
+            border: none;
+            color: inherit;
+            font-family: inherit;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 0;
+            margin-bottom: 16px;
+        }
+        
+        .section-toggle:hover {
+            opacity: 0.8;
+        }
+        
+        .arrow {
+            margin-right: 8px;
+            transition: transform 0.2s;
+        }
+        
+        .arrow.expanded {
+            transform: rotate(90deg);
+        }
+        
+        .section-content {
+            display: none;
+            opacity: 0.9;
+            line-height: 1.6;
+            font-size: 12px;
+            margin-left: 16px;
+        }
+        
+        .section-content.expanded {
+            display: block;
+        }
+        
+        .section-content p {
+            margin-bottom: 16px;
+        }
+        
+        .footer {
+            margin-top: 64px;
+            padding-top: 32px;
+            border-top: 1px solid #e5e5e5;
+        }
+        
+        body.dark .footer {
+            border-top-color: #404040;
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 32px;
+            font-size: 12px;
+        }
+        
+        .footer-links a {
+            color: inherit;
+            text-decoration: underline;
+            opacity: 0.6;
+            transition: opacity 0.2s;
+        }
+        
+        .footer-links a:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="blog.html">Blog</a>
+                <a href="archive.html">Archive</a>
+                <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <svg class="moon-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <div class="header">
+            <h1>Chaïmae Sriti</h1>
+            <p>Founder of <a href="https://actuarially.co" target="_blank" rel="noopener noreferrer">Actuarially</a></p>
+        </div>
+
+        <!-- About Section -->
+        <div class="section">
+            <button class="section-toggle" onclick="toggleSection('about')">
+                <span class="arrow">▶</span>
+                [About]
+            </button>
+            <div class="section-content" id="about">
+                <p>I'm the Founder of Actuarially, an AI-native workspace for insurance teams—built to replace actuarial data science with fast, compliant, and interpretable automation. We're quietly building the future of pricing and risk intelligence, with strong early traction and a clear product thesis.</p>
+                <p>I'm a data scientist by training, statistician by obsession, and founder by necessity. My background spans insurance, AI, and experimentation—previously leading pricing sophistication at Aviva Canada and Beneva. I studied computer science at McGill and statistics at Laval and INSEA.</p>
+                <p>I grew up in Rabat and currently live between Montreal and wherever the work feels most alive.</p>
+            </div>
+        </div>
+
+        <!-- Previously Section -->
+        <div class="section">
+            <button class="section-toggle" onclick="toggleSection('previously')">
+                <span class="arrow">▶</span>
+                [Previously]
+            </button>
+            <div class="section-content" id="previously">
+                <p>Senior Data Scientist at Aviva Canada (2022-2024) — Led pricing model development and risk assessment for commercial insurance products.</p>
+                <p>Data Scientist at Beneva (2021-2022) — Developed predictive models for customer retention and claims forecasting.</p>
+                <p>Research Assistant at McGill University (2020-2021) — Worked on machine learning applications in healthcare and medical imaging.</p>
+                <p>Actuarial Intern at various insurance companies (2019-2020) — Gained foundational experience in risk modeling and statistical analysis.</p>
+            </div>
+        </div>
+
+        <!-- Interests Section -->
+        <div class="section">
+            <button class="section-toggle" onclick="toggleSection('interests')">
+                <span class="arrow">▶</span>
+                [Interests]
+            </button>
+            <div class="section-content" id="interests">
+                <p>Building AI systems that insurance professionals actually want to use. The intersection of interpretable ML and regulatory compliance. Making complex statistical concepts accessible to business stakeholders.</p>
+                <p>Outside of work: Arabic literature, long-distance running, and exploring Montreal's coffee scene. I'm always reading something about the philosophy of probability or the history of insurance.</p>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section">
+            <button class="section-toggle" onclick="toggleSection('contact')">
+                <span class="arrow">▶</span>
+                [Contact]
+            </button>
+            <div class="section-content" id="contact">
+                <p>Email: <a href="mailto:chaimaesriti@gmail.com">chaimaesriti@gmail.com</a></p>
+                <p>Always happy to chat about AI in insurance, startup building, or data science career paths.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-links">
+                <a href="https://twitter.com/chaimaesriti" target="_blank" rel="noopener noreferrer">X</a>
+                <a href="https://linkedin.com/in/chaimaesriti" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/chaimaesriti" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Dark mode functionality
+        function toggleDarkMode() {
+            const body = document.body;
+            const sunIcon = document.querySelector('.sun-icon');
+            const moonIcon = document.querySelector('.moon-icon');
+            
+            body.classList.toggle('dark');
+            
+            if (body.classList.contains('dark')) {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+                localStorage.setItem('darkMode', 'true');
+            } else {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+                localStorage.setItem('darkMode', 'false');
+            }
+        }
+
+        // Initialize dark mode from localStorage
+        function initDarkMode() {
+            const isDarkMode = localStorage.getItem('darkMode') === 'true' || 
+                (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+            
+            if (isDarkMode) {
+                document.body.classList.add('dark');
+                document.querySelector('.sun-icon').style.display = 'none';
+                document.querySelector('.moon-icon').style.display = 'block';
+            }
+        }
+
+        // Section toggle functionality
+        function toggleSection(sectionId) {
+            const content = document.getElementById(sectionId);
+            const arrow = content.previousElementSibling.querySelector('.arrow');
+            
+            if (content.classList.contains('expanded')) {
+                content.classList.remove('expanded');
+                arrow.classList.remove('expanded');
+            } else {
+                content.classList.add('expanded');
+                arrow.classList.add('expanded');
+            }
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            initDarkMode();
+        });
+    </script>
+</body>
+</html> 

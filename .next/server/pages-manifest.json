@@ -1,10 +1,8 @@
 {
   "/_app": "pages/_app.js",
-  "/archive": "pages/archive.html",
-  "/blog": "pages/blog.html",
-  "/": "pages/index.html",
-  "/projects": "pages/projects.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/": "pages/index.js",
+  "/blog": "pages/blog.js",
+  "/projects": "pages/projects.js"
 }

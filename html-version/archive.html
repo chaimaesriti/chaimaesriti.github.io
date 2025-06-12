@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive | Chaïmae Sriti</title>
+    <meta name="description" content="Past essays on AI, insurance, and startup building">
+    <link rel="icon" href="images/3.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "IBM Plex Mono", monospace;
+            background-color: white;
+            color: black;
+            min-height: 100vh;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        body.dark {
+            background-color: black;
+            color: white;
+        }
+        
+        .container {
+            max-width: 768px;
+            margin: 0 auto;
+            padding: 96px 24px;
+            font-size: 14px;
+            position: relative;
+        }
+        
+        .nav {
+            position: absolute;
+            top: 16px;
+            right: 0;
+            z-index: 50;
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        
+        .nav-links a {
+            color: inherit;
+            text-decoration: none;
+            font-size: 14px;
+            opacity: 1;
+            transition: opacity 0.2s;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        .dark-mode-toggle {
+            padding: 8px;
+            border-radius: 50%;
+            background: transparent;
+            border: none;
+            color: inherit;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .dark-mode-toggle:hover {
+            background-color: rgba(128, 128, 128, 0.2);
+        }
+        
+        body.dark .dark-mode-toggle:hover {
+            background-color: rgba(128, 128, 128, 0.3);
+        }
+        
+        .header {
+            margin-bottom: 40px;
+            padding-top: 64px;
+        }
+        
+        .header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .header p {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-bottom: 24px;
+        }
+        
+        .essays {
+            margin-top: 48px;
+        }
+        
+        .essay {
+            margin-bottom: 48px;
+            border-left: 2px solid #808080;
+            padding-left: 24px;
+        }
+        
+        .essay-date {
+            font-size: 12px;
+            opacity: 0.6;
+            margin-bottom: 8px;
+        }
+        
+        .essay h3 {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        
+        .essay h3 a {
+            color: inherit;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        
+        .essay h3 a:hover {
+            opacity: 0.8;
+        }
+        
+        .essay-description {
+            opacity: 0.8;
+            margin-bottom: 16px;
+            line-height: 1.6;
+            font-size: 12px;
+        }
+        
+        .essay-tags {
+            display: flex;
+            gap: 16px;
+            font-size: 12px;
+            opacity: 0.6;
+        }
+        
+        .footer {
+            margin-top: 64px;
+            padding-top: 32px;
+            border-top: 1px solid #808080;
+        }
+        
+        body.dark .footer {
+            border-top-color: #404040;
+        }
+        
+        .back-link {
+            color: inherit;
+            text-decoration: underline;
+            font-size: 14px;
+            transition: opacity 0.2s;
+        }
+        
+        .back-link:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="blog.html">Blog</a>
+                <a href="archive.html">Archive</a>
+                <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <svg class="moon-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <div class="header">
+            <h1>Archive</h1>
+            <p>Past essays on AI, insurance, and startup building</p>
+        </div>
+
+        <!-- Essays -->
+        <div class="essays">
+            <!-- Essay 1 -->
+            <div class="essay">
+                <div class="essay-date">December 2024</div>
+                <h3><a href="#ai-insurance-future">The Future of AI in Insurance: Beyond Automation</a></h3>
+                <p class="essay-description">
+                    How artificial intelligence is reshaping the insurance industry beyond simple automation. From risk assessment to customer experience, exploring the transformative potential of AI while addressing regulatory challenges and ethical considerations.
+                </p>
+                <div class="essay-tags">
+                    <span>AI</span>
+                    <span>Insurance</span>
+                    <span>Technology</span>
+                </div>
+            </div>
+
+            <!-- Essay 2 -->
+            <div class="essay">
+                <div class="essay-date">November 2024</div>
+                <h3><a href="#actuarial-science-evolution">The Evolution of Actuarial Science in the Digital Age</a></h3>
+                <p class="essay-description">
+                    Traditional actuarial methods are being revolutionized by machine learning and big data. Examining how the profession is adapting to new technologies while maintaining its core principles of risk assessment and mathematical rigor.
+                </p>
+                <div class="essay-tags">
+                    <span>Actuarial Science</span>
+                    <span>Data Science</span>
+                    <span>Career</span>
+                </div>
+            </div>
+
+            <!-- Essay 3 -->
+            <div class="essay">
+                <div class="essay-date">October 2024</div>
+                <h3><a href="#building-ai-native-products">Building AI-Native Products: Lessons from the Trenches</a></h3>
+                <p class="essay-description">
+                    What it really means to build AI-native products versus retrofitting AI into existing solutions. Insights from building Actuarially and the unique challenges of creating software that's intelligent by design.
+                </p>
+                <div class="essay-tags">
+                    <span>Product Development</span>
+                    <span>AI</span>
+                    <span>Startups</span>
+                </div>
+            </div>
+
+            <!-- Essay 4 -->
+            <div class="essay">
+                <div class="essay-date">September 2024</div>
+                <h3><a href="#interpretable-ml-insurance">Why Interpretable ML Matters in Insurance</a></h3>
+                <p class="essay-description">
+                    The insurance industry's unique regulatory environment demands explainable AI. Exploring techniques for building machine learning models that are both powerful and interpretable, meeting compliance requirements without sacrificing performance.
+                </p>
+                <div class="essay-tags">
+                    <span>Machine Learning</span>
+                    <span>Interpretability</span>
+                    <span>Regulation</span>
+                </div>
+            </div>
+
+            <!-- Essay 5 -->
+            <div class="essay">
+                <div class="essay-date">August 2024</div>
+                <h3><a href="#data-science-career-transition">From Academia to Industry: A Data Scientist's Journey</a></h3>
+                <p class="essay-description">
+                    Reflections on transitioning from academic research to industry data science. The skills that transfer, the gaps to fill, and advice for others making the leap from theoretical to applied machine learning.
+                </p>
+                <div class="essay-tags">
+                    <span>Career</span>
+                    <span>Data Science</span>
+                    <span>Academia</span>
+                </div>
+            </div>
+
+            <!-- Essay 6 -->
+            <div class="essay">
+                <div class="essay-date">July 2024</div>
+                <h3><a href="#startup-technical-decisions">Technical Decisions in Early-Stage Startups</a></h3>
+                <p class="essay-description">
+                    How to make technology choices when building a startup from scratch. Balancing speed, scalability, and technical debt while maintaining focus on product-market fit and customer needs.
+                </p>
+                <div class="essay-tags">
+                    <span>Startups</span>
+                    <span>Technology</span>
+                    <span>Decision Making</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <a href="index.html" class="back-link">← Back to home</a>
+        </div>
+    </div>
+
+    <script>
+        // Dark mode functionality
+        function toggleDarkMode() {
+            const body = document.body;
+            const sunIcon = document.querySelector('.sun-icon');
+            const moonIcon = document.querySelector('.moon-icon');
+            
+            body.classList.toggle('dark');
+            
+            if (body.classList.contains('dark')) {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+                localStorage.setItem('darkMode', 'true');
+            } else {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+                localStorage.setItem('darkMode', 'false');
+            }
+        }
+
+        // Initialize dark mode from localStorage
+        function initDarkMode() {
+            const isDarkMode = localStorage.getItem('darkMode') === 'true' || 
+                (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+            
+            if (isDarkMode) {
+                document.body.classList.add('dark');
+                document.querySelector('.sun-icon').style.display = 'none';
+                document.querySelector('.moon-icon').style.display = 'block';
+            }
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            initDarkMode();
+        });
+    </script>
+</body>
+</html> 
