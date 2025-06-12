@@ -51,7 +51,7 @@ export default function Home() {
             <Link href="/" className="hover:opacity-80 text-sm">Home</Link>
             <Link href="/projects" className="hover:opacity-80 text-sm">Projects</Link>
             <Link href="/blog" className="hover:opacity-80 text-sm">Blog</Link>
-            <Link href="/archive" className="hover:opacity-80 text-sm">Archive</Link>
+            {/* <Link href="/archive" className="hover:opacity-80 text-sm">Archive</Link> */}
             <button 
               onClick={() => setDarkMode(!darkMode)} 
               className={`p-2 rounded-full ${darkMode ? 'bg-transparent text-white hover:bg-gray-800' : 'bg-transparent text-black hover:bg-gray-100'}`}
