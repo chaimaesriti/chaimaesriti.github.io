@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail - The Last Living Data Scientist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-white text-xl font-bold">The Last Living Data Scientist</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-white transition duration-300">Home</a>
+                    <a href="index.html#about" class="text-gray-300 hover:text-white transition duration-300">About</a>
+                    <a href="projects.html" class="text-gray-300 hover:text-white transition duration-300">Projects</a>
+                    <a href="index.html#contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Back to Projects -->
+    <div class="bg-white border-b">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <a href="projects.html" class="text-blue-600 hover:text-blue-800 font-medium">← Back to Projects</a>
+        </div>
+    </div>
+
+    <!-- Project Header -->
+    <section class="py-12 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center gap-4 mb-4">
+                <span class="bg-blue-500 px-3 py-1 rounded-full text-sm font-medium">Machine Learning</span>
+                <span class="text-blue-200">Classification</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Project Title</h1>
+            <p class="text-xl text-blue-100 max-w-3xl">
+                A brief, dramatic description of what this legendary project accomplished in the world of data science.
+            </p>
+        </div>
+    </section>
+
+    <!-- Project Image -->
+    <section class="py-8 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <img src="https://via.placeholder.com/1200x600" alt="Project Visualization" class="w-full rounded-xl shadow-lg">
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="py-12 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="prose prose-lg max-w-none">
+                <div class="bg-gray-50 rounded-xl p-8 mb-8">
+                    <h2 class="text-2xl font-bold mb-4 text-gray-900">⚡ Problem Statement</h2>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        A detailed description of the problem the project is trying to solve. What challenge did you face? What was the business or research question that needed answering?
+                    </p>
+                </div>
+
+                <div class="bg-blue-50 rounded-xl p-8 mb-8">
+                    <h2 class="text-2xl font-bold mb-4 text-gray-900">📊 Data</h2>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                        Information about the data used in the project:
+                    </p>
+                    <ul class="text-gray-700 text-lg space-y-2">
+                        <li>• Data source and collection method</li>
+                        <li>• Dataset size and features</li>
+                        <li>• Data quality and preprocessing steps</li>
+                        <li>• Any data challenges faced</li>
+                    </ul>
+                </div>
+
+                <div class="bg-green-50 rounded-xl p-8 mb-8">
+                    <h2 class="text-2xl font-bold mb-4 text-gray-900">🧠 Methodology</h2>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                        The methodology used to solve the problem:
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Algorithm/Technique 1</h3>
+                            <p class="text-gray-600">Description of the first main technique or algorithm used.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Algorithm/Technique 2</h3>
+                            <p class="text-gray-600">Description of the second main technique or algorithm used.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Evaluation Method</h3>
+                            <p class="text-gray-600">How you measured success and validated your results.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-2">Tools & Libraries</h3>
+                            <p class="text-gray-600">The main tools and libraries used in the implementation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-yellow-50 rounded-xl p-8 mb-8">
+                    <h2 class="text-2xl font-bold mb-4 text-gray-900">🏆 Results</h2>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        The results of the project, including key findings, model performance metrics, and any visualizations that showcase the success of the project.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-lg p-4 border border-yellow-200 text-center">
+                            <h3 class="font-bold text-blue-600 text-2xl mb-2">85%</h3>
+                            <p class="text-sm text-gray-600">Accuracy Score</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 border border-yellow-200 text-center">
+                            <h3 class="font-bold text-green-600 text-2xl mb-2">0.92</h3>
+                            <p class="text-sm text-gray-600">F1 Score</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 border border-yellow-200 text-center">
+                            <h3 class="font-bold text-purple-600 text-2xl mb-2">95%</h3>
+                            <p class="text-sm text-gray-600">Precision</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="bg-gray-900 rounded-xl p-8 text-white">
+                    <h2 class="text-2xl font-bold mb-6">🛠️ Tech Stack</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="text-center">
+                            <div class="bg-blue-600 w-12 h-12 rounded-lg mx-auto mb-2 flex items-center justify-center font-mono font-bold">Py</div>
+                            <p class="text-sm">Python</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-orange-600 w-12 h-12 rounded-lg mx-auto mb-2 flex items-center justify-center font-mono font-bold">Sk</div>
+                            <p class="text-sm">Scikit-learn</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-green-600 w-12 h-12 rounded-lg mx-auto mb-2 flex items-center justify-center font-mono font-bold">Pd</div>
+                            <p class="text-sm">Pandas</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-red-600 w-12 h-12 rounded-lg mx-auto mb-2 flex items-center justify-center font-mono font-bold">Np</div>
+                            <p class="text-sm">NumPy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Link -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">Explore the Code</h2>
+            <p class="text-gray-600 mb-6">Dive into the source code and see how the magic happens</p>
+            <a href="#" target="_blank" class="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold transition duration-300 inline-flex items-center gap-2">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/>
+                </svg>
+                View on GitHub
+            </a>
+        </div>
+    </section>
+
+    <!-- Back to Projects -->
+    <section class="py-8 bg-white border-t">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <a href="projects.html" class="text-blue-600 hover:text-blue-800 font-medium text-lg">← Back to All Projects</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2024 The Last Living Data Scientist - Chaimae Sriti</p>
+        </div>
+    </footer>
+</body>
+</html> 

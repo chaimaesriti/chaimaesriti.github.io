@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legendary Projects - The Last Living Data Scientist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-white text-xl font-bold">The Last Living Data Scientist</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-white transition duration-300">Home</a>
+                    <a href="index.html#about" class="text-gray-300 hover:text-white transition duration-300">About</a>
+                    <a href="projects.html" class="text-white font-semibold">Projects</a>
+                    <a href="index.html#contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Legendary Projects</h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Behold the digital artifacts of a dying breed - projects that shaped the future before AI took over the world.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="https://via.placeholder.com/400x250" alt="Customer Churn Prediction" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-medium">Machine Learning</span>
+                            <span class="text-gray-500 text-sm">Classification</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Predicting Customer Churn</h3>
+                        <p class="text-gray-600 mb-4">Built a machine learning model that saved a telecom company millions by predicting which customers were about to abandon ship.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Python</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Scikit-learn</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">Pandas</span>
+                        </div>
+                        <a href="project-detail.html" class="bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-lg font-medium transition duration-300 inline-block">
+                            View Details →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="https://via.placeholder.com/400x250" alt="Sentiment Analysis" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">NLP</span>
+                            <span class="text-gray-500 text-sm">Text Analysis</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Movie Review Sentiment Analysis</h3>
+                        <p class="text-gray-600 mb-4">Taught machines to understand human emotions by analyzing movie reviews with natural language processing.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Python</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">NLTK</span>
+                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">TensorFlow</span>
+                        </div>
+                        <a href="project-detail.html" class="bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-lg font-medium transition duration-300 inline-block">
+                            View Details →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="https://via.placeholder.com/400x250" alt="Customer Segmentation" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">Clustering</span>
+                            <span class="text-gray-500 text-sm">Unsupervised ML</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Customer Segmentation</h3>
+                        <p class="text-gray-600 mb-4">Divided and conquered customers using the ancient art of clustering algorithms to reveal hidden purchasing patterns.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Python</span>
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">K-Means</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-xs">Matplotlib</span>
+                        </div>
+                        <a href="customer-segmentation.html" class="bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-lg font-medium transition duration-300 inline-block">
+                            View Details →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Add more project cards as needed -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="https://via.placeholder.com/400x250" alt="Coming Soon" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-xs font-medium">Coming Soon</span>
+                            <span class="text-gray-500 text-sm">TBA</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">The Next Legend</h3>
+                        <p class="text-gray-600 mb-4">The next project in the arsenal of the last data scientist is brewing. Stay tuned for more digital wizardry.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">TBD</span>
+                        </div>
+                        <button class="bg-gray-300 text-gray-600 px-4 py-2 rounded-lg font-medium cursor-not-allowed" disabled>
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Want to See More?</h2>
+            <p class="text-xl text-gray-300 mb-8">
+                These are just a few artifacts from the vault. The real treasure lies in collaboration.
+            </p>
+            <a href="index.html#contact" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-semibold transition duration-300 inline-block">
+                Let's Work Together
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2024 The Last Living Data Scientist - Chaimae Sriti</p>
+        </div>
+    </footer>
+</body>
+</html> 

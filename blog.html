@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - The Last Living Data Scientist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-yellow': '#F4D03F',
+                        'soft-yellow': '#FEF9E7',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center py-6">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-primary-yellow rounded-full"></div>
+                    <a href="index.html" class="text-lg font-medium text-gray-900">CHAIMAE SRITI</a>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-12">
+                    <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">HOME</a>
+                    <a href="projects.html" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">PROJECTS</a>
+                    <a href="blog.html" class="text-sm font-medium text-gray-900 hover:text-gray-600 transition-colors">BLOG</a>
+                    <a href="index.html#about" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">ABOUT ME</a>
+                    <a href="index.html#contact" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-soft-yellow to-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-light text-gray-900 mb-8 tracking-wider">
+                DIGITAL<br>MUSINGS
+            </h1>
+            <p class="text-xl font-light text-gray-600 tracking-wide">
+                Thoughts from the last surviving data scientist
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="space-y-16">
+                <!-- Blog Post 1 -->
+                <article class="border-b border-gray-200 pb-16">
+                    <span class="text-sm font-medium text-gray-500 tracking-wider">DECEMBER 15, 2024</span>
+                    <h2 class="text-3xl md:text-4xl font-light text-gray-900 mt-4 mb-6 leading-tight">
+                        The Death of Data Science: A Eulogy for Human Analytics
+                    </h2>
+                    <p class="text-lg font-light text-gray-600 leading-relaxed mb-8">
+                        We are witnessing the end of an era. The field I once called home—data science—is being systematically automated out of existence. Machine learning platforms now generate insights faster than humans can think. AutoML tools build models better than most practitioners. And AI agents are beginning to ask and answer business questions independently.
+                    </p>
+                    <p class="text-lg font-light text-gray-600 leading-relaxed mb-8">
+                        But perhaps this isn't a tragedy. Perhaps it's evolution. As the last living data scientist, I've had a front-row seat to this transformation, and I'm here to tell you: the death of data science as we know it might be the best thing that ever happened to it.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-sm font-medium text-gray-900 tracking-wider hover:text-gray-600 transition-colors">
+                        READ FULL ARTICLE →
+                    </a>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="border-b border-gray-200 pb-16">
+                    <span class="text-sm font-medium text-gray-500 tracking-wider">NOVEMBER 28, 2024</span>
+                    <h2 class="text-3xl md:text-4xl font-light text-gray-900 mt-4 mb-6 leading-tight">
+                        Surviving the Algorithm Wars: A Personal Manifesto
+                    </h2>
+                    <p class="text-lg font-light text-gray-600 leading-relaxed mb-8">
+                        The war between human intuition and artificial intelligence has been raging for years, but most people didn't realize we were fighting. While everyone debated whether AI would take over the world, it quietly began taking over our spreadsheets, our dashboards, and our decision-making processes.
+                    </p>
+                    <p class="text-lg font-light text-gray-600 leading-relaxed mb-8">
+                        I've survived by embracing a simple truth: the future doesn't belong to those who can compete with machines, but to those who can dance with them. Here's how I've learned to waltz with algorithms while maintaining my humanity.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-sm font-medium text-gray-900 tracking-wider hover:text-gray-600 transition-colors">
+                        READ FULL ARTICLE →
+                    </a>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="border-b border-gray-200 pb-16">
+                    <span class="text-sm font-medium text-gray-500 tracking-wider">OCTOBER 12, 2024</span>
+                    <h2 class="text-3xl md:text-4xl font-light text-gray-900 mt-4 mb-6 leading-tight">
+                        The Art of Feature Engineering: A Dying Craft
+                    </h2>
+                    <p class="text-lg font-light text-gray-600 leading-relaxed mb-8">
+                        In the old days—which is to say, three years ago—feature engineering was the heart of machine learning. We would spend weeks crafting the perfect features, combining domain knowledge with statistical intuition to create variables that would help our models see patterns in the data.
+                    </p>
+                    <p class="text-lg font-light text-gray-600 leading-relaxed mb-8">
+                        Now, neural networks learn features automatically, and automated ML platforms handle feature selection without human intervention. But I argue that feature engineering isn't dead—it's just evolved into something more profound: the art of asking the right questions.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-sm font-medium text-gray-900 tracking-wider hover:text-gray-600 transition-colors">
+                        READ FULL ARTICLE →
+                    </a>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="border-b border-gray-200 pb-16">
+                    <span class="text-sm font-medium text-gray-500 tracking-wider">SEPTEMBER 5, 2024</span>
+                    <h2 class="text-3xl md:text-4xl font-light text-gray-900 mt-4 mb-6 leading-tight">
+                        Why I Still Code in a No-Code World
+                    </h2>
+                    <p class="text-lg font-light text-gray-600 leading-relaxed mb-8">
+                        Every week, a new no-code platform promises to democratize data science. Drag-and-drop interfaces for building machine learning models. Natural language queries that generate SQL. Visual workflows that replace Python scripts.
+                    </p>
+                    <p class="text-lg font-light text-gray-600 leading-relaxed mb-8">
+                        These tools are powerful, and they're making data analysis accessible to millions of people who could never write a line of code. So why do I still spend my days in VS Code, wrestling with pandas DataFrames and debugging neural networks? The answer might surprise you.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-sm font-medium text-gray-900 tracking-wider hover:text-gray-600 transition-colors">
+                        READ FULL ARTICLE →
+                    </a>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article>
+                    <span class="text-sm font-medium text-gray-500 tracking-wider">AUGUST 18, 2024</span>
+                    <h2 class="text-3xl md:text-4xl font-light text-gray-900 mt-4 mb-6 leading-tight">
+                        The Last Data Scientist's Guide to Staying Relevant
+                    </h2>
+                    <p class="text-lg font-light text-gray-600 leading-relaxed mb-8">
+                        If you're reading this, you're probably worried about your future in data science. Maybe you've heard that GPT-4 can write better Python code than you. Maybe your company just implemented an AutoML solution that makes your models look obsolete. Maybe you're wondering if it's time to switch careers.
+                    </p>
+                    <p class="text-lg font-light text-gray-600 leading-relaxed mb-8">
+                        As someone who has watched this field transform from the inside, let me offer you some hard-won wisdom about not just surviving, but thriving in the age of automated intelligence.
+                    </p>
+                    <a href="#" class="inline-flex items-center text-sm font-medium text-gray-900 tracking-wider hover:text-gray-600 transition-colors">
+                        READ FULL ARTICLE →
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-2xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-light text-gray-900 mb-6">Stay Updated</h2>
+            <p class="text-lg font-light text-gray-600 mb-8">
+                Get notified when I publish new thoughts on the future of data science
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="your@email.com" class="flex-1 px-4 py-3 border border-gray-300 text-gray-900 font-light">
+                <button class="px-6 py-3 bg-gray-900 text-white font-medium text-sm tracking-wider hover:bg-gray-800 transition-colors">
+                    SUBSCRIBE
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <div class="w-6 h-6 bg-primary-yellow rounded-full"></div>
+                    <span class="text-sm font-medium">THE LAST LIVING DATA SCIENTIST</span>
+                </div>
+                <p class="text-sm font-light text-gray-400">© 2024 Chaimae Sriti</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
